@@ -1,0 +1,140 @@
+.commPartwo {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  width: 100%;
+  padding: 10px 10px 10px 90px;
+
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  background: #faf3ea;
+}
+
+.comm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px 6px;
+  box-sizing: border-box;
+}
+
+.imageCom {
+  width: 60px;
+  height: 60px;
+  padding: 0px 3px 0px 3px;
+}
+
+.textComm {
+  gap: 2px;
+}
+
+.imageCom img {
+  max-width: 100%;
+}
+
+.textCommTitle {
+  color: #242424;
+  height: 38px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-align: left;
+}
+
+.textCommParag {
+  color: #898989;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  width: 267px;
+  height: 30px;
+}
+.commSpecial{
+  padding-left: 15px;
+  margin-right: -50px;
+}
+@media (max-width: 1024px) {
+  .commSpecial{
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .commPartwo {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+
+    margin-bottom: 0;
+    height: 400px;
+  }
+}
+
+@media (max-width: 912px) {
+  .commPartwo {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+gap:  40px 0px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 820px) {
+  .commPartwo {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .commPartwo {
+    padding: 27px 10px;
+    gap: 43px 0px;
+}
+}
+
+
+
+@media (max-width: 470px) {
+  .commSpecial {
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .commPartwo {
+    padding: 20px;
+    gap: 28px 0px;
+    height: 466px;
+  }
+  .textCommParag {
+   
+    font-size: 16px;
+  
+}
+.textCommTitle {
+  
+  font-size: 22px;
+
+}
+.imageCom{
+  height: 50px;
+  width: 50px;
+}
+}
+
+@media(max-width:440px){
+  .commPartwo{
+   padding:  29px 10px 29px 43px;
+
+  }
+}
