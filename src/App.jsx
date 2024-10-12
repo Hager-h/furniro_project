@@ -62,6 +62,12 @@ useEffect(() => {
   return (
     <div className="App">
         <ShoppingCartProvider>
+
+
+
+
+
+          
         <ClickcontextProvider>
 <FavContextProvider>
 

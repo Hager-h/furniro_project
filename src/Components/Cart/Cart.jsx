@@ -15,11 +15,10 @@ import emptyCart from "../../images/empty.png";
 import { Bars } from "react-loader-spinner";
 
 function Cart() {
-  const { cartItems,  removeFromCart } = useShoppingCart();
+  const { cartItems,  removeFromCart,increaseCartQuantity } = useShoppingCart();
 
   let { handleLinkClick } = useContext(ClickContext);
 
-  const { increaseCartQuantity } = useShoppingCart();
   const [products, setproducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
