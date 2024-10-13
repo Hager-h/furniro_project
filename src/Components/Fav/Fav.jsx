@@ -49,11 +49,15 @@ function Fav() {
         {fav.length>0  ?<div className={styles.res}>
       <h1 className={styles.prodtitle}>My Favourite Products</h1>
 
-      {loading && (
-        <div>
+     
+      {error && (
+        <h1 className={styles.err}>{error}</h1>
+      )}
+      {loading ? (
+        <div style={{margin:" 10px 30px"}}>
           <Circles
-            height="80"
-            width="80"
+            height="70"
+            width="70"
             color="#c5a254"
             ariaLabel="circles-loading"
             wrapperStyle={{}}
@@ -61,11 +65,8 @@ function Fav() {
             visible={true}
           />
         </div>
-      )}
-
-      {error ? (
-        <h1 className={styles.err}>{error}</h1>
-      ) : (
+      )
+: (
         <div className={styles.featuredcards} style={{marginBottom:"45px"}}>
           {fav.map((product, index) => (
             <Link to={`/products/${product.id}`} key={index}>
